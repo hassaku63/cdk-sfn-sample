@@ -1,0 +1,7 @@
+Hello, {{ name }}!!!
+
+function_name: {{ function_name }}
+function_version: {{ function_version }}
+aws_request_id: {{ aws_request_id }}
+log_group_name: {{ log_group_name }}
+log_stream_name: {{ log_stream_name }}

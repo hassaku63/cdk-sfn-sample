@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
+import { Construct } from "constructs";
 import * as cdk from 'aws-cdk-lib';
 import { CdkSfnStack } from '../lib/cdk-sfn-stack';
 
 const app = new cdk.App();
-new CdkSfnStack(app, 'CdkSfnStack', {
+
+const stack = new CdkSfnStack(app, 'CdkSfnStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
